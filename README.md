@@ -3,7 +3,7 @@
 Background
 ---------------
 
-The level of fluorescence in a liquid culture is correlated with the amount of C. elegans genetic material that is found within, as the toehold switch unbinds only in the presence of a target strand from C. elegans. While visual detection of fluorescence may alert health care workers to the possibility of helminthiasis diagnosis, Lambert iGEM set out to create a more practical manner in which they could not only detect, but quantify fluorescence. Keeping in mind the frugal standards of accessibility and portability, Lambert iGEM introduces FluoroCents: an ultra-low cost, 3-D printed fluorometer that can be used with ease in the field by healthcare workers. FluoroCents is the most portable fluorometer in the world - at just 7 grams, FluoroCents will provide a rapid and accessible platform for in-field detection. The physical portion of FluoroCents is a 3-D printed light excitation and filtration mechanism, which serves to extract only certain frequencies of fluorescence from a sample.
+The level of fluorescence in a liquid culture is correlated with the amount of <i>C. elegans</i> genetic material that is found within, as the toehold switch unbinds only in the presence of a target strand from <i>C. elegans</i>. While visual detection of fluorescence may alert health care workers to the possibility of helminthiasis diagnosis, Lambert iGEM set out to create a more practical manner in which they could detect and quantify fluorescence. Keeping in mind the frugal standards of accessibility and portability, Lambert iGEM introduces FluoroCents: an ultra-low cost, 3-D printed fluorometer that can be used with ease in the field by healthcare workers. FluoroCents is the most portable fluorometer in the world - at just 7 grams, FluoroCents will provide a rapid and accessible platform for in-field detection. The physical portion of FluoroCents is a 3-D printed light excitation and filtration mechanism, which serves to extract only certain frequencies of fluorescence from a sample.
 
 Overview
 ---------------
@@ -18,7 +18,7 @@ At its base, FluoroCents provides a simple method for detecting the presence of 
 Ambient Light Sensor
 ---------------
 
-The ambient light sensor is a photodetector found at the top of most smartphones. The sensor is intended to sense ambient light near the surface of the phone and dim the brightness of the phone accordingly. The ambient light sensor picks up electromagnetic energy in a limited range of wavelengths of visible light, but includes the wavelengths emitted by GFP (Pereira & Hosker, 2019). Lambert iGEM will manipulate the sensor and phone device to collect data about luminescence emitted by fluorescent samples, giving us tangible information about the total fluorescence found in a sample. Furthermore, the prevalence of sensors within smartphones allow for an accessible mechanism for this data collection. 
+The ambient light sensor is a photodetector found at the top of most smartphones. The sensor is intended to sense ambient light near the surface of the phone and dim the brightness of the phone accordingly. The ambient light sensor picks up electromagnetic energy in a limited range of wavelengths of visible light, but includes the wavelengths emitted by GFP [1]. Lambert iGEM will manipulate the sensor and phone device to collect data about luminescence emitted by fluorescent samples, giving us tangible information about the total fluorescence found in a sample. Furthermore, the prevalence of sensors within smartphones allow for an accessible mechanism for this data collection. 
 
 <div align="center"><center><img src="ALS_Clip_Art.png" align="center" /></center></div>
 <div align="center"><figcaption>
@@ -62,3 +62,8 @@ As part of their testing, Lambert iGEM wanted to verify that FluoroCents was a l
         <br></br>
 
 With the graph of the data Lambert iGEM collected, it was clear that there was a real correlation between lux from FluoroCents, seen on the right y-axis, and the raw fluorescence data from a plate reader, seen on the left column. This correlation to an industrial-grade instrument means that FluoroCents does have a valid claim as a fluorescence tool, giving the FluoroCents application legitimacy in the FluoroCents system. 
+
+References
+---------------
+
+[1] Pereira, V. R., & Hosker, B. S. (2019). Low-cost (<€5), open-source, potential alternative to commercial spectrophotometers. PLOS Biology, 17(6). doi: 10.1371/journal.pbio.3000321 
