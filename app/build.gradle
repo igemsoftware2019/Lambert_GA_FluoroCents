@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.krishikishore.flouro_q"
+        minSdkVersion 26
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        resValue "string", "google_maps_key", (project.findProperty("GOOGLE_MAPS_API_KEY") ?: "")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation files('libs/mysql-connector-java-8.0.13.jar')
+    implementation files('libs/jboss-common-jdbc-wrapper.jar')
+    implementation 'com.android.support:multidex:1.0.0'
+    implementation 'org.apache.commons:commons-lang3:3.6'
+    implementation 'pub.devrel:easypermissions:0.2.1'
+    implementation 'com.google.android.gms:play-services-maps:10.2.0'
+    implementation 'com.amazonaws:aws-android-sdk-ddb-mapper:2.+'
+    implementation 'com.amazonaws:aws-android-sdk-core:2.4.4'
+    implementation 'com.amazonaws:aws-android-sdk-ddb:2.4.4'
+    implementation 'com.amazonaws:aws-android-sdk-ddb-document:2.4.4'
+//    implementation "com.amazonaws:aws-java-sdk-dynamodb:1.11.564"
+    implementation ('com.amazonaws:aws-android-sdk-mobile-client:2.7.+@aar') { transitive = true }
+    implementation 'com.amazonaws:aws-android-sdk-ddb-mapper:2.7.+'
+}

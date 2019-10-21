@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstructionsCapture">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".InstructionsActivity" >
+
+
+        <TextView
+            android:id="@+id/text_view_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Attach phone to stabilizer"
+            android:textSize="30pt"
+            />
+
+        <TextView
+            android:id="@+id/blank0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/text_view_id"
+            android:text=""
+            android:textSize="2pt"
+            />
+
+        <TextView
+            android:id="@+id/results1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blank0"
+            android:text="Align ambient light sensor perpendicular to cuvette."
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/blank1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/results1"
+            android:text=""
+            android:textSize="80pt"
+            />
+
+        <Button
+            android:id="@+id/CreditsBtn"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blank1"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:background="#204F6D"
+            android:onClick="moveToLightSensor"
+            android:text="RECORD"
+            android:rotation="180"
+            android:textColor="#FFFFFF"
+            android:textSize="7pt" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
