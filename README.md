@@ -1,14 +1,14 @@
-# Fluoro¢ents App
+# FluoroCents App
 
 Background
 ---------------
 
-In our wet lab process, the level of fluorescence in a liquid culture is correlated with the amount of C. elegans genetic material that is found within, as the toehold switch unbinds only in the presence of a target strand from C. elegans. While visual detection of fluorescence may alert health care workers to the possibility of helminthiasis diagnosis, we set out to create a more practical manner in which we could not only detect, but quantify fluorescence. Keeping in mind the standards of frugality, accessibility, and portability, we introduce FluoroCents: an ultra-low cost, 3-D printed fluorometer that can be used with ease in the field by healthcare workers. FluoroCents is the most portable fluorometer in the world - at just 7 grams, Fluorocents will provide a rapid and accessible platform for in-field detection. The physical portion of FluoroCents is a 3-D printed light excitation and filtration mechanism. But in order for the FluoroCents hardware device to function, it needs an Android phone with the FluoroCents app installed to function. 
+The level of fluorescence in a liquid culture is correlated with the amount of C. elegans genetic material that is found within, as the toehold switch unbinds only in the presence of a target strand from C. elegans. While visual detection of fluorescence may alert health care workers to the possibility of helminthiasis diagnosis, Lambert iGEM set out to create a more practical manner in which they could not only detect, but quantify fluorescence. Keeping in mind the frugal standards of accessibility and portability, Lambert iGEM introduces FluoroCents: an ultra-low cost, 3-D printed fluorometer that can be used with ease in the field by healthcare workers. FluoroCents is the most portable fluorometer in the world - at just 7 grams, FluoroCents will provide a rapid and accessible platform for in-field detection. The physical portion of FluoroCents is a 3-D printed light excitation and filtration mechanism, which serves to extract only certain frequencies of fluorescence from a sample.
 
 Overview
 ---------------
 
-At its base, FluoroCents provides a simple method for detecting the presence of fluorescence in a liquid culture. However, with the revolutionary FluoroCents application, our fluorometer can go beyond this simple test and provide analytics on the level of fluorescence in a sample and use this data to extrapolate information about the relative level of helminth DNA in a sample. 
+At its base, FluoroCents provides a simple method for detecting the presence of fluorescence in a liquid culture. However, with the revolutionary FluoroCents application, their fluorometer can go beyond this simple test and provide analytics on the level of fluorescence in a sample and use this data to extrapolate information about the relative level of helminth DNA in a sample. 
 
 <div align="center"><center><img src="T--Lambert_GA--appscreenshots1.png" align="center" /></center></div>
 <div align="center"><figcaption>
@@ -18,7 +18,7 @@ At its base, FluoroCents provides a simple method for detecting the presence of 
 Ambient Light Sensor
 ---------------
 
-The ambient light sensor is a photodetector found at the top of most smartphones. The sensor is intended to sense ambient light near the surface of the phone and dim the brightness of the phone accordingly. The ambient light sensor picks up electromagnetic energy in a limited range of wavelengths of visible light, but includes the wavelengths emitted by GFP (Pereira & Hosker, 2019). We will manipulate the sensor and phone device to collect data about luminescence emitted by fluorescent samples, giving us tangible information about the total fluorescence found in a sample. Furthermore, the prevalence of sensors within smartphones allow for an accessible mechanism for this data collection. 
+The ambient light sensor is a photodetector found at the top of most smartphones. The sensor is intended to sense ambient light near the surface of the phone and dim the brightness of the phone accordingly. The ambient light sensor picks up electromagnetic energy in a limited range of wavelengths of visible light, but includes the wavelengths emitted by GFP (Pereira & Hosker, 2019). Lambert iGEM will manipulate the sensor and phone device to collect data about luminescence emitted by fluorescent samples, giving us tangible information about the total fluorescence found in a sample. Furthermore, the prevalence of sensors within smartphones allow for an accessible mechanism for this data collection. 
 
 <div align="center"><center><img src="ALS_Clip_Art.png" align="center" /></center></div>
 <div align="center"><figcaption>
@@ -40,7 +40,7 @@ The FluoroCents Android app takes repeated measurements of the sample's lux valu
     Source of Sample
     Additional Notes
     
-The latitude and longitude coordinates for each test can then be retrieved from the DynamoDB database and displayed within the FluoroCents Android app using Google Maps API. Each location marker for its respective test is labelled with characteristics as inputted by the user. These features make up the helminth diagnosis mapping tool (HDMT). This tool is built into the testing app and accessible on mobile phones across the globe. Healthcare workers can easily access data where helminth infections are prevalent and which areas are in immediate need of aid. On a broader scale, this enables healthcare workers to allocate resources and plan distribution pipelines in a way that is efficient and resourceful. Housing all parts of the diagnosis workflow, including the measurement of fluorescence, storage of data, and map access all in one app serves as a highly useful capability in the field. 
+The latitude and longitude coordinates for each test can then be retrieved from the DynamoDB database and displayed within the FluoroCents Android app using Google Maps API. Each location marker for its respective test is labelled with characteristics as inputted by the user. These features make up the helminth diagnosis mapping tool (HDMT). This tool is built into the testing app and accessible on mobile phones across the globe. Healthcare workers can easily access data where helminth infections are prevalent in order to prioritize immediate need of aid. On a broader scale, this enables healthcare workers to allocate resources and plan distribution pipelines in a way that is efficient and resourceful. Housing all parts of the diagnosis workflow, including the measurement of fluorescence, storage of data, and map access all in one app serves as a highly useful capability in the field. 
 
 <div align="center"><center><img src="T--Lambert_GA--appscreenshots2.png" align="center" /></center></div>
 <div align="center"><figcaption>
@@ -48,17 +48,17 @@ The latitude and longitude coordinates for each test can then be retrieved from 
     </figcaption></div>
     <br></br>
 
-By measuring the lux value using a phone’s ambient light sensor and our FluoroCents app, we can generate more complex information regarding the detection of a helminth organism. 
+By measuring the lux value using a phone’s ambient light sensor and their FluoroCents app, Lambert iGEM can generate more complex information regarding the detection of a helminth organism. 
 
 Verification of FluoroCents with a Plate Reader
 ---------------
 
-As part of our testing, we wanted to verify that FluoroCents was a legitimate device to measure fluorescence by comparing it with an industrial plate reader. We wanted to graphically compare the lux measurements taken with FluoroCents to the arbitrary values from a plate reader for several two fold dilutions of the iGEM fluorescein standard.
+As part of their testing, Lambert iGEM wanted to verify that FluoroCents was a legitimate device to measure fluorescence by comparing it with an industrial plate reader. Lambert iGEM wanted to graphically compare the lux measurements taken with FluoroCents to the arbitrary values from a plate reader for several two fold dilutions of the iGEM fluorescein standard.
 
 <div align="center"><center><img src="T--Lambert_GA--FluoroData3.png" align="center" /></center></div>
 <div align="center"><figcaption>
-<b>Figure 4:</b> Made using GraphPad Prism. The graph shows the measurement of Fluoroscein dilutions by both a commercial plate reader and our very own FluoroCents device. This graph has a log2 x-axis.
+<b>Figure 4:</b> Made using GraphPad Prism. The graph shows the measurement of Fluoroscein dilutions by both a commercial plate reader and their very own FluoroCents device. This graph has a log2 x-axis.
     </figcaption></div>
         <br></br>
 
-With the graph of the data we collected, it was clear that there was a real correlation between lux from FluoroCents, seen on the right y-axis, and the raw fluorescence data from a plate reader, seen on the left column. This correlation to an industrial-grade instrument means that FluoroCents does have a valid claim as a fluorescence tool, giving the FluoroCents application legitimacy in the FluoroCents system. 
+With the graph of the data Lambert iGEM collected, it was clear that there was a real correlation between lux from FluoroCents, seen on the right y-axis, and the raw fluorescence data from a plate reader, seen on the left column. This correlation to an industrial-grade instrument means that FluoroCents does have a valid claim as a fluorescence tool, giving the FluoroCents application legitimacy in the FluoroCents system. 
